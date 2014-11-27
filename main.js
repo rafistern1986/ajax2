@@ -2,10 +2,13 @@ $(document).ready(function () {
     $("input").click(function () {
         $("div").load("dbFile.html", function (responseDate, statusOfCall, XMLHttpRequestObject) {
             if (statusOfCall == "success") {
-            alert("hi")
+                var a = responseDate;
+                var b = statusOfCall;
+                var c = XMLHttpRequestObject;
+                alert(a + b + c)
             }
             if (statusOfCall == "error") {
-            alert("error")
+                alert("")
             }
         });
     });
