@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $("input").click(function () {
-        $("div").load("dbFile.html", function (responseDate, statusOfCall, XMLHttpRequestObject) {
+        $("div").load("dbFile.html p", function (responseDate, statusOfCall, XMLHttpRequestObject) {
             if (statusOfCall == "success") {
                 var a = responseDate;
                 var b = statusOfCall;
